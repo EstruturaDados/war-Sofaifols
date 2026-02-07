@@ -86,7 +86,12 @@ Territorio* alocarMapa(){
 
 void inicializarTerritorios(Territorio *mapa) {
     for ( int i = 0; i <TOTAL_TERRITORIOS; i++) {
-        
+
+        printf("\n------- CADASTRO DO TERRITÓTIO %d -------\n", i +1);
+
+        printf(" Nome do território: ");
+        fgets(mapa[i].nome, sizeof(mapa[i].nome), stdin)                             //parametro do fgets: onde eu desejo salvar o texto q vai ser lido, o tamanho e o stdin padrao
+// usar o sizeof ajuda caso o código seja alterado e o tamanho estabelecido pelo vetor seja trocado.
     }
 }
 
